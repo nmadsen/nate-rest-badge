@@ -1,3 +1,12 @@
+# project settings files
+*.idea
+*.ipr
+*.iml
+*.iws
+.classpath
+.settings
+.project
+
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -10,3 +19,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# output from 10k-lines
+10k_lines_*.txt
+
+.idea/workspace.xml
