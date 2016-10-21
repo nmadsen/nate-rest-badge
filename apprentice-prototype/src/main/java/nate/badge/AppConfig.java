@@ -16,6 +16,16 @@ public class AppConfig {
     @Autowired
     DataSourceProperties dataSourceProperties;
 
+    @Bean(name = "shoppingListService")
+    public ShoppingListService getShoppingListService() {
+        return new ShoppingListService();
+    }
+
+    @Bean(name = "shoppingListStore")
+    public ShoppingListStore getShoppingListStore() {
+        return new ShoppingListStore();
+    }
+
     @Bean
     @ConfigurationProperties(prefix = DataSourceProperties.PREFIX)
     DataSource realDataSource() {
